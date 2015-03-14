@@ -12,6 +12,7 @@ import static org.quartz.JobBuilder.*;
 import static org.quartz.TriggerBuilder.*;
 
 import com.smalwe.jobs.FristJob;
+import com.smalwe.jobs.SecondJob;
 
 public class Schedular {
 	public static void main (String args[]) throws SchedulerException {
@@ -22,12 +23,25 @@ public class Schedular {
 		JobDetail job =  newJob(FristJob.class)
 				.withIdentity("myJob", "group1")
 				.build(); 
+		
+		JobDetail job2 = newJob(SecondJob.class)
+				.withIdentity("secondJob", "group1")
+				.usingJobData("name", "First Job")
+				.build();
+		
 		Trigger trigger = newTrigger().withIdentity("myTrigger","group1").startNow()
 				.withSchedule(SimpleScheduleBuilder.simpleSchedule()
 						.withIntervalInSeconds(1)
 						.repeatForever())
 						.build(); 
+		
+		Trigger trigger2 = newTrigger().withIdentity("myTrigger2","group1").startNow()
+				.withSchedule(SimpleScheduleBuilder.simpleSchedule()
+						.withIntervalInSeconds(1)
+						.repeatForever())
+						.build();
 		sch.start();
 		sch.scheduleJob(job, trigger);
+		sch.scheduleJob(job2, trigger2); //Trigger can relate to one job only
 	}
 }
