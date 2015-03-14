@@ -1,5 +1,12 @@
 package com.smalwe.main;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 import org.quartz.CronScheduleBuilder;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
@@ -16,7 +23,15 @@ import com.smalwe.jobs.FristJob;
 import com.smalwe.jobs.SecondJob;
 
 public class Schedular {
-	public static void main (String args[]) throws SchedulerException {
+	
+	 static Properties prop  ;
+	
+	public static void main (String args[]) throws SchedulerException, IOException {
+		
+		getProp();
+		System.out.println (prop.getProperty("cronSecondJob"));
+		
+		
 		SchedulerFactory schFact = new StdSchedulerFactory();
 		
 		Scheduler sch = schFact.getScheduler();
@@ -37,12 +52,22 @@ public class Schedular {
 						.build(); 
 		
 		Trigger trigger2 = newTrigger().withIdentity("myTrigger2","group2")
-				.withSchedule(CronScheduleBuilder.cronSchedule("1/3 * * * * ?")).build();
+				.withSchedule(CronScheduleBuilder.cronSchedule(prop.getProperty("cronSecondJob"))).build();
 				
 		
 
 		sch.start();
 		sch.scheduleJob(job, trigger);
 		sch.scheduleJob(job2, trigger2); //Trigger can relate to one job only
+	}
+	
+	private static void getProp() throws IOException {
+		
+		prop = new Properties();
+		File file = new File("config.properties");
+		FileInputStream input = new FileInputStream(file);
+		prop.load(input);
+		input.close();	
+		
 	}
 }
