@@ -1,5 +1,6 @@
 package com.smalwe.main;
 
+import org.quartz.CronScheduleBuilder;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
@@ -35,11 +36,11 @@ public class Schedular {
 						.repeatForever())
 						.build(); 
 		
-		Trigger trigger2 = newTrigger().withIdentity("myTrigger2","group1").startNow()
-				.withSchedule(SimpleScheduleBuilder.simpleSchedule()
-						.withIntervalInSeconds(1)
-						.repeatForever())
-						.build();
+		Trigger trigger2 = newTrigger().withIdentity("myTrigger2","group2")
+				.withSchedule(CronScheduleBuilder.cronSchedule("1/3 * * * * ?")).build();
+				
+		
+
 		sch.start();
 		sch.scheduleJob(job, trigger);
 		sch.scheduleJob(job2, trigger2); //Trigger can relate to one job only
