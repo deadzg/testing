@@ -21,14 +21,19 @@ import static org.quartz.TriggerBuilder.*;
 
 import com.smalwe.jobs.FristJob;
 import com.smalwe.jobs.SecondJob;
+import com.smalwe.utils.Helpers;
 
+
+/*
+ * JobDataMap is limited to that particular execution of job only
+ */
 public class Schedular {
 	
 	 static Properties prop  ;
 	
 	public static void main (String args[]) throws SchedulerException, IOException {
 		
-		getProp();
+		prop = Helpers.getProp();
 		System.out.println (prop.getProperty("cronSecondJob"));
 		
 		
@@ -38,6 +43,7 @@ public class Schedular {
 		
 		JobDetail job =  newJob(FristJob.class)
 				.withIdentity("myJob", "group1")
+				//.usingJobData("name", "1st Job")
 				.build(); 
 		
 		JobDetail job2 = newJob(SecondJob.class)
@@ -61,13 +67,5 @@ public class Schedular {
 		sch.scheduleJob(job2, trigger2); //Trigger can relate to one job only
 	}
 	
-	private static void getProp() throws IOException {
-		
-		prop = new Properties();
-		File file = new File("config.properties");
-		FileInputStream input = new FileInputStream(file);
-		prop.load(input);
-		input.close();	
-		
-	}
+	
 }
