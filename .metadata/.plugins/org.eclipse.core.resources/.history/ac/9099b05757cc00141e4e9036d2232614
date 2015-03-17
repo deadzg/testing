@@ -1,0 +1,22 @@
+package com.redmart.prob.main;
+
+/**
+ * @author smalwe
+ * 
+ * Prob : http://geeks.redmart.com/2015/01/07/skiing-in-singapore-a-coding-diversion/
+ * Steps:
+ * 1. Get the input into matrix
+ * 2. Create a map with key (number) : value (position in matrix)
+ * 3. Starting from smallest number , search for corresponding longest and deepest path
+ * 4. Store it in an object called block which has fields as value,longestPathVal, deepestPathVal
+ * 
+ */
+
+
+public class FinalPath {
+	
+	public static void main (String args[]) {
+		
+	}
+
+}

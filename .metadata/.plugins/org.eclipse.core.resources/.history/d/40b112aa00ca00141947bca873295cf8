@@ -1,0 +1,7 @@
+package com.smalwe.jobs;
+
+import org.quartz.Job;
+
+public class FristJob implements Job {
+	
+}

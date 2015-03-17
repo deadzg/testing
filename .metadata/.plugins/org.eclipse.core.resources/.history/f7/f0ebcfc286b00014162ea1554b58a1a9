@@ -1,0 +1,47 @@
+package com.smalwe.examples.ui;
+
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.*;
+
+
+public class SwingTextFieldDemo {
+	
+	JFrame mainFrame;
+	JTextField name;
+	JTextField age;
+	private JPanel controlPanel;
+	private JLabel header;
+	
+	public SwingTextFieldDemo() {
+		prepareGUI();
+	}
+	
+	private  void prepareGUI() {
+		mainFrame = new JFrame("Swing Text Demo");
+		mainFrame.setLayout(new GridLayout(3,1));
+		mainFrame.setSize(400, 400);
+		//mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+mainFrame.addWindowListener(new WindowAdapter() {
+			
+			public void windowClosing(WindowEvent windowEvent) {
+				System.exit(0);
+			}
+		}); 
+		header = new JLabel("",JLabel.CENTER);
+		controlPanel = new JPanel();
+		controlPanel.setSize(400, 400);
+		mainFrame.add(controlPanel);
+		mainFrame.add(header);
+		mainFrame.pack();
+		mainFrame.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SwingTextFieldDemo stfd = new SwingTextFieldDemo();
+	}
+
+}

@@ -1,0 +1,10 @@
+jdbcDriver=com.mysql.jdbc.Driver
+db_url=jdbc:mysql://localhost:3306
+username=smalwe
+pass=smalwe@123
+
+
+
+
+
+cronSecondJob=1/2 * * * * ?

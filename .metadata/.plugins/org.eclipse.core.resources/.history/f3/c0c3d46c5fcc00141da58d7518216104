@@ -1,0 +1,80 @@
+package com.redmart.prob.main;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ * @author smalwe
+ * 
+ * Prob : http://geeks.redmart.com/2015/01/07/skiing-in-singapore-a-coding-diversion/
+ * Steps:
+ * 1. Get the input into matrix
+ * 2. Create a map with key (number) : value (position in matrix)
+ * 3. Starting from smallest number , search for corresponding longest and deepest path
+ * 4. Store it in an object called block which has fields as value,longestPathVal, deepestPathVal
+ * 
+ */
+
+
+public class FinalPath {
+	
+	public static void main (String args[]) throws IOException {
+		getMatrixFromInput("input.txt");
+	}
+
+	public static void getMatrixFromInput(String filePath) throws IOException {
+		
+			
+		BufferedReader br = new BufferedReader(new FileReader(filePath));
+		try {
+			StringBuilder sb = new StringBuilder();
+			String line = br.readLine();
+			int rows = 0; 
+			int cols = 0;
+			String matrixSpecs[] = line.split(" ");
+			rows = Integer.parseInt(matrixSpecs[0]);
+			cols = Integer.parseInt(matrixSpecs[1]);
+			
+			int inputMatrix [][] = new int[rows][cols];
+			
+			String contentPerRow[] = new String [cols];
+			int rowsCount = 0;
+			
+			System.out.println ("Rows:" + rows + "  Cols:" + cols);
+			line = br.readLine();
+			while (line != null) {
+				//sb.append(line);
+				contentPerRow = line.split(" ");
+				System.out.println(contentPerRow.length);
+				for(int i = 0 ; i< contentPerRow.length; i++) {
+					System.out.println("RowNum:" + rowsCount + " COl count:" + i);
+					inputMatrix[rowsCount][i] = Integer.parseInt(contentPerRow[i]);
+					rowsCount++;
+				}
+				rowsCount = 0;
+				
+				//sb.append(System.lineSeparator());
+				line = br.readLine();
+			}
+			for (int i=0; i< rows ; i++ ) {
+				for (int j= 0 ; j< cols ; j++) {
+					System.out.print(inputMatrix[i][j]);
+					System.out.print (" ");
+				}
+			System.out.println();
+			}
+			//System.out.println (fullString);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			br.close();
+		}
+	}
+
+}

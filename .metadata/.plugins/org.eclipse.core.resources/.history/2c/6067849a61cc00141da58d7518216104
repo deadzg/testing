@@ -1,0 +1,5 @@
+package com.redmart.prob.model;
+
+public class Position {
+
+}

@@ -29,14 +29,6 @@ public class SwingTextFieldDemo {
 		mainFrame.setLayout(new GridLayout(3,2));
 		
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-/*mainFrame.addWindowListener(new WindowAdapter() {
-	
-			
-			public void windowClosing(WindowEvent windowEvent) {
-				System.exit(0);
-			}
-		}); 
-*/
 		submit = new JButton("Submit");
 		submit.addActionListener(new ActionListener() {
 			
@@ -69,11 +61,6 @@ public class SwingTextFieldDemo {
 			}
 		});
 		
-		//name.setText("Fedora21");
-		//header = new JLabel("Label Header",JLabel.CENTER);
-		//controlPanel = new JPanel();
-		//controlPanel.setSize(400, 400);
-		//mainFrame.add(controlPanel);
 		mainFrame.add(nameLabel);
 		mainFrame.add(name);
 		mainFrame.add(ageLabel);
@@ -85,9 +72,6 @@ public class SwingTextFieldDemo {
 		
 	}
 	
-	public static void textDemo() {
-		
-	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
