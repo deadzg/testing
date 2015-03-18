@@ -15,9 +15,9 @@ public class ExecuteLL {
 			
 			LinkedList ll = new LinkedList();
 			ll.addNode(n1);
-			ll.addNode(n2);
-			ll.addNode(n3);
-			ll.addNode(n5);
+			//ll.addNode(n2);
+			//ll.addNode(n3);
+			//ll.addNode(n5);
 			
 			System.out.println(ll.toString());
 			
