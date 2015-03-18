@@ -1,0 +1,29 @@
+package com.linkedlist.main;
+
+import com.linkedlist.ds.LinkedList;
+import com.linkedlist.model.Node;
+
+public class ExecuteLL {
+	public static void main (String args[]){
+			Node n1 = new Node(12);
+			Node n2 = new Node(5);
+			Node n3 = new Node(23);
+			Node n4 = new Node(56);
+			Node n5 = new Node(5);
+			
+			
+			LinkedList ll = new LinkedList();
+			ll.addNode(n1);
+			ll.addNode(n2);
+			ll.addNode(n3);
+			
+			LinkedList ll2 = new LinkedList();
+			
+			ll2.createLinkedList(n1, n2, n3, n5);
+			System.out.println(ll.toString());
+			System.out.println(ll2.toString());
+			
+			
+			
+	}
+}

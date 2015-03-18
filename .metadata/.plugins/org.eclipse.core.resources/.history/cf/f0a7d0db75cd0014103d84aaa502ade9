@@ -1,0 +1,33 @@
+package com.linkedlist.ds;
+
+import com.linkedlist.model.Node;
+
+public class LinkedList {
+	
+	Node headNode;
+	
+	public void addNode(LinkedList ll, Node n) {
+		Node p = ll.getHeadNode();
+		if(p == null) {
+			p = n;
+			return;
+		}
+		
+		while(p.getNextNode() != null) {
+			p = p.getNextNode();
+		}
+		p = n;
+	}
+
+	public Node getHeadNode() {
+		return headNode;
+	}
+
+	public void setHeadNode(Node headNode) {
+		this.headNode = headNode;
+	}
+	
+	
+	
+	
+}

@@ -11,7 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
+import com.redmart.prob.model.Block;
 import com.redmart.prob.model.Position;
 
 /**
@@ -36,11 +39,56 @@ public class FinalPath {
 		
 	}
 
+	public static Block getNearByLongestPathVal(Block b, int rows, int cols) {
+		int brow = b.getPosition().getRow();
+		int bcol = b.getPosition().getCol();
+		List<Position> positions = new ArrayList<Position>();
+		if(brow == 0 && rows > 1) {
+			positions.add(new Position(brow+1,bcol));
+		}
+		else if(brow == (rows -1)) {
+			positions.add(new Position(brow-1, bcol));
+		}
+		else {
+			positions.add(new Position(brow+1,bcol));
+			positions.add(new Position(brow-1, bcol));
+		}
+		
+		
+		if(bcol == 0 && cols > 1) {
+			positions.add(new Position(brow,bcol+1));
+		}
+		else if(bcol == (cols -1)) {
+			positions.add(new Position(brow, bcol-1));
+		}
+		else {
+			positions.add(new Position(brow,bcol+1));
+			positions.add(new Position(brow, bcol-1));
+		}
+		
+		
+		
+		
+		return null;
+	}
+	
+	
+	
+	
+	public static int[] getLongestAndSteepestPath(SortedMap<Integer,List<Position>> valueMap) {
+		
+		
+		return null;	
+		
+		
+	}
+	
+	
 	public static Map<Integer,List<Position>> getValueMap(int[][] inputMatrix) {
 		
 		
 		
-		Map<Integer,List<Position>> valueMap = new HashMap<Integer , List<Position>>();
+		SortedMap<Integer,List<Position>> valueMap = new TreeMap<Integer , List<Position>>();
 		
 		for (int i=0; i< inputMatrix.length ; i++ ) {
 			for (int j= 0 ; j< inputMatrix[0].length ; j++) {

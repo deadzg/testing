@@ -2,8 +2,9 @@ package com.redmart.prob.model;
 
 public class Block {
 	private int value;
-	private int longestPathVal;
-	private int deepestPathVal;
+	private int longestPathVal = 1;
+	private int deepestPathVal = 0;
+	private  Position position;
 	public int getValue() {
 		return value;
 	}
@@ -21,6 +22,12 @@ public class Block {
 	}
 	public void setDeepestPathVal(int deepestPathVal) {
 		this.deepestPathVal = deepestPathVal;
+	}
+	public Position getPosition() {
+		return position;
+	}
+	public void setPosition(Position position) {
+		this.position = position;
 	}
 	
 	

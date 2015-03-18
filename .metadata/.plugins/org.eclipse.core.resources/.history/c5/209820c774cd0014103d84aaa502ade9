@@ -1,0 +1,29 @@
+package com.linkedlist.model;
+
+public class Node {
+	private Node node = null;
+	private int value;
+	
+	Node(Node node, int value) {
+		this.node = node;
+		this.value = value;
+	}
+
+	public Node getNode() {
+		return node;
+	}
+
+	public void setNode(Node node) {
+		this.node = node;
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	
+}
