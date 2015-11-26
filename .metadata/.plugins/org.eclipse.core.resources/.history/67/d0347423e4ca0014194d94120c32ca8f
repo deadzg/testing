@@ -1,7 +1,0 @@
-jdbcDriver=com.mysql.jdbc.Driver
-db_url=jdbc:mysql://localhost
-
-
-
-
-cronSecondJob=1/2 * * * * ?

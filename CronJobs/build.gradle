@@ -10,4 +10,5 @@ repositories {
 dependencies {
 	compile "org.quartz-scheduler:quartz:2.2.1"
 	compile "mysql:mysql-connector-java:5.1.6"
+	compile "org.springframework.integration:spring-integration-core:4.1.2.RELEASE"
 }

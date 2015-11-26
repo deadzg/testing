@@ -1,0 +1,50 @@
+[?1049h[?1h=[1;51r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[51;1H"telnetScanResults.txt" 8121L, 243665C[1;1HPORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.saleemcarpets.com (64.74.223.46)
+Host is up (0.26s latency).
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.cristal.com.hk (202.181.236.8)
+Host is up (0.31s latency).
+rDNS record for 202.181.236.8: mail.n2-tech.com
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for kb.calyxsupport.com (38.121.39.8)
+Host is up (0.28s latency).
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.newlife.co.uk (81.19.187.46)
+Host is up (0.18s latency).
+rDNS record for 81.19.187.46: ebony.uk-dns.com
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.gipsy.sk (213.215.115.91)
+Host is up (0.19s latency).
+rDNS record for 213.215.115.91: vps087.nameserver.sk
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.kramsach.org (62.75.181.91)
+Host is up (0.16s latency).
+rDNS record for 62.75.181.91: ma21884.plusserver.de
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.moben.net (81.88.57.68)
+Host is up (0.35s latency).
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.toplaughs.com (72.52.4.119)
+Host is up (0.10s latency).
+rDNS record for 72.52.4.119: unknown.prolexic.com
+PORT   STATE    SERVICE
+23/tcp filtered telnet
+
+Nmap scan report for www.lestroisa.com (188.165.193.100)
+Host is up (0.28s latency).[1;1H[?12l[?25h[?25l[51;1HType  :quit<Enter>  to exit Vim[51;32H[K[1;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[51;1H[K[51;1H:[?12l[?25hqa![?25l[51;1H[K[51;1H[?1l>[?12l[?25h[?1049l2 files to edit

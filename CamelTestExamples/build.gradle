@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+}
+
+dependencies {
+    compile 'org.springframework:spring-context:4.1.6.RELEASE'
+	compile 'javax.jms:jms:1.1'
+	compile 'org.apache.activemq:activemq-core:5.7.0'
+	compile 'org.apache.xbean:xbean-spring:3.16'
+	compile 'org.springframework:spring-jms:4.1.6.RELEASE'
+	
+}

@@ -1,0 +1,15 @@
+package com.java.java8feature;
+
+class LambdaBasics {
+	
+	public static void main (String args[]) {
+		
+		Greetings g = msg -> System.out.print("Hello Sir!!" + msg);
+		
+		g.sayMessage("Wassup!!");
+	}
+	
+	public interface Greetings {
+		void sayMessage (String msg);
+	}
+}

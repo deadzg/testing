@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="lib" path="/home/smalwe/Code/SpringGreeting/unresolved dependency - org.springframework.boot spring-boot-starter-web 1.2.6.RELEASE" exported="true"/>
+	<classpathentry kind="lib" path="/home/smalwe/Code/SpringGreeting/unresolved dependency - junit junit 4.12" exported="true"/>
+</classpath>

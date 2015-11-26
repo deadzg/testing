@@ -1,0 +1,51 @@
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2015-07-07 00:07 IST
+Stats: 0:04:44 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 19.60% done; ETC: 00:31 (0:19:04 remaining)
+Stats: 0:05:12 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 74.35% done; ETC: 00:14 (0:01:46 remaining)
+Nmap scan report for www.grossary.com (23.229.190.66)
+Host is up (0.29s latency).
+rDNS record for 23.229.190.66: ip-23-229-190-66.ip.secureserver.net
+Not shown: 983 filtered ports
+PORT      STATE  SERVICE     VERSION
+22/tcp    open   ssh?
+| ssh-hostkey: 
+|   1024 25:b1:de:48:92:3f:9c:37:14:3a:4b:8f:f1:78:cb:48 (DSA)
+|_  2048 ec:4d:9c:de:98:9e:15:00:5d:f0:4c:a4:f8:c0:aa:47 (RSA)
+26/tcp    closed rsftp
+443/tcp   open   https       Apache/2.4.12
+|_http-title: Coming Soon
+| ssl-cert: Subject: commonName=*.prod.phx3.secureserver.net/organizationName=Special Domain Services, LLC/stateOrProvinceName=Arizona/countryName=US
+| Not valid before: 2014-04-10T21:06:10+00:00
+|_Not valid after:  2016-10-14T17:08:31+00:00
+|_ssl-date: 2015-07-06T18:45:21+00:00; 0s from local time.
+465/tcp   open   smtps?
+|_smtp-commands: Couldn't establish connection on port 465
+| ssl-cert: Subject: commonName=*.prod.phx3.secureserver.net/organizationName=Special Domain Services, LLC/stateOrProvinceName=Arizona/countryName=US
+| Not valid before: 2014-04-10T21:06:10+00:00
+|_Not valid after:  2016-10-14T17:08:31+00:00
+587/tcp   open   submission?
+|_smtp-commands: Couldn't establish connection on port 587
+| ssl-cert: Subject: commonName=*.prod.phx3.secureserver.net/organizationName=Special Domain Services, LLC/stateOrProvinceName=Arizona/countryName=US
+| Not valid before: 2014-04-10T21:06:10+00:00
+|_Not valid after:  2016-10-14T17:08:31+00:00
+995/tcp   open   pop3s?
+|_pop3-capabilities: UIDL SASL(PLAIN LOGIN) AUTH-RESP-CODE PIPELINING RESP-CODES USER CAPA TOP
+| ssl-cert: Subject: commonName=*.prod.phx3.secureserver.net/organizationName=Special Domain Services, LLC/stateOrProvinceName=Arizona/countryName=US
+| Not valid before: 2014-04-10T21:06:10+00:00
+|_Not valid after:  2016-10-14T17:08:31+00:00
+1248/tcp  open   hermes?
+5222/tcp  closed xmpp-client
+50000/tcp closed ibm-db2
+50001/tcp closed unknown
+50002/tcp closed iiimsf
+50003/tcp closed unknown
+50006/tcp closed unknown
+50300/tcp closed unknown
+50500/tcp closed unknown
+50636/tcp closed unknown
+50800/tcp closed unknown
+
+Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 549.33 seconds

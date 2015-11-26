@@ -1,0 +1,24 @@
+package com.java.java8feature;
+
+class LambdaBasics {
+	
+	public static void main (String args[]) {
+		
+		Greetings g = msg -> System.out.print("Hello Sir!!" + msg);
+		
+		BigDeal res = (int a, int b, int c) -> a + b + c;
+		
+		res.operation(5, 4, 3);
+		g.sayMessage("Wassup!!");
+	}
+	
+	public interface Greetings {
+		void sayMessage (String msg);
+	}
+	
+	public interface BigDeal {
+		int operation (int a , int b, int c);
+	}
+	
+	
+}

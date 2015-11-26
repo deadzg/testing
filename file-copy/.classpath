@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry sourcepath="/home/smalwe/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-core/2.15.0/56e03240f308201251fbd121d3a510639a05cacf/camel-core-2.15.0-sources.jar" kind="lib" path="/home/smalwe/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-core/2.15.0/bf385018c0cf42ed929d131036002e8371efa056/camel-core-2.15.0.jar" exported="true"/>
+	<classpathentry sourcepath="/home/smalwe/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.10/49c7ee5f2f363e6fa8ce5faa7e3be49d0124884e/slf4j-log4j12-1.7.10-sources.jar" kind="lib" path="/home/smalwe/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.10/b3eeae7d1765f988a1f45ea81517191315c69c9e/slf4j-log4j12-1.7.10.jar" exported="true"/>
+	<classpathentry sourcepath="/home/smalwe/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-core/2.2.11/b4327db047fc2c02705d97280453cbe124685451/jaxb-core-2.2.11-sources.jar" kind="lib" path="/home/smalwe/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-core/2.2.11/c3f87d654f8d5943cd08592f3f758856544d279a/jaxb-core-2.2.11.jar" exported="true"/>
+	<classpathentry sourcepath="/home/smalwe/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/2.2.11/480c6c4447b39aa6033b09a14678f734fe713db2/jaxb-impl-2.2.11-sources.jar" kind="lib" path="/home/smalwe/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/2.2.11/a49ce57aee680f9435f49ba6ef427d38c93247a6/jaxb-impl-2.2.11.jar" exported="true"/>
+	<classpathentry sourcepath="/home/smalwe/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar" kind="lib" path="/home/smalwe/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" exported="true"/>
+	<classpathentry sourcepath="/home/smalwe/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/4d2725efe68b9943ba0deaf334bb27116ca6b687/slf4j-api-1.7.10-sources.jar" kind="lib" path="/home/smalwe/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/5b338f206827d88acd890739f400a9b7664e5984/slf4j-api-1.7.10.jar" exported="true"/>
+</classpath>
